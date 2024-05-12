@@ -1,0 +1,60 @@
+.containerHeader {
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 20, 147) 100%);
+}
+
+
+.logoSite {
+    width: 100px;
+}
+
+.navlist {
+    display: flex;
+    gap: 60px;
+}
+
+.navlist a {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:425px){
+    .containerHeader img{
+       width: 70px; 
+    }
+    .navlist{
+        gap: 20px;
+    }
+}    
+
+@media (max-width:360px){
+    .containerHeader img{
+       width: 60px; 
+    }
+    .navlist{
+        gap: 15px;
+    }
+}    

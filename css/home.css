@@ -1,0 +1,144 @@
+.home {
+    background-image: url('/assets/img/fundo_01.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.home-content h3 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+    color: white;
+}
+
+.home-img {
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.home-img img {
+    position: relative;
+    width: 22vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25% var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.home-img img:hover {
+    box-shadow: 0 0 50px var(--main-color);
+    box-shadow: 0 0 100px var(--main-color);
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 1000px;
+    color: white;
+}
+
+
+.text-animation {
+    font-size: 34px;
+    font-weight: 200;
+    min-width: 280px;
+}
+
+.text-animation span {
+    position: relative;
+}
+
+.text-animation span::before {
+    content: 'HTML';
+    color: var(--main-color);
+    animation: words 10s infinite;
+}
+
+.text-animation span::after {
+    counter-reset: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--main-color);
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: 'CSS';
+    }
+
+    21%,
+    40% {
+        content: "JavaScript";
+    }
+
+    41%,
+    60% {
+        content: "WordPress";
+    }
+}
+
+@media (max-width:425px){
+    .home-content h1, .home-content span.marissa{
+        font-size: 48px;
+    }
+
+    .home-content h3, .home-content span{
+        font-size: 30px;
+    }
+
+    .home-img{
+        justify-items: center;
+    }
+}
+
+@media (max-width:360px){
+    .home-content h1, .home-content span.marissa{
+        font-size: 35px;
+    }
+
+    .home-content h3, .home-content span{
+        font-size: 24px;
+    }
+
+    .home-img{
+        justify-items: center;
+    }
+}

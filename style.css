@@ -1,0 +1,33 @@
+@import url(./css/cabecalho.css);
+@import url(./css/home.css);
+@import url(./css/skills.css);
+@import url(./css/contato.css);
+@import url(./css/rodape.css);
+
+
+:root {
+    --bg-color: black;
+
+    --text-color: white;
+
+    --main-color: deeppink;
+
+    
+    --html: #DB4E26;
+    --css: #2862EA;
+    --js: #E2C431;
+    --wp: #207196;
+}    
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: black;
+    font-family: 'Poppins', sans-serif;
+ }

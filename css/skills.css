@@ -1,0 +1,184 @@
+.marginContainer{
+    padding: 30px 20px;
+}
+
+.skillContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.tituloBloco {
+    text-align: center;
+    font-size: 3.7rem;
+}
+
+.skill {
+    padding: 10px 48.7px;
+    border: 2px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skill img {
+    height: 150px;
+    z-index: 1;
+    
+}
+
+.skill h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.skill h3 {
+    color: var(--text-color);
+    text-align: center;
+    z-index: 1;
+    
+}
+
+.htmlColorBorder {
+   display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 20vh;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 20px; 
+}
+
+.htmlColorBorder::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 150%;
+    background-color: #DB4E26;
+    animation: animate 4s linear infinite;
+}
+
+.htmlColorBorder::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: black;
+    border-radius: 16px;
+}
+
+.cssColorBorder {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 20vh;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cssColorBorder::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 150%;
+    background-color: #2862EA;
+    animation: animate 4s linear infinite;
+}
+
+.cssColorBorder::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: black;
+    border-radius: 16px;
+}
+
+.jsColorBorder {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 20vh;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.jsColorBorder::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 150%;
+    background-color: yellow;
+    animation: animate 4s linear infinite;
+}
+
+.jsColorBorder::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: black;
+    border-radius: 16px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:425px){
+    .skillContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloBloco{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:360px){
+    .skillContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloBloco{
+        font-size: 40px;
+    }
+
+    .htmlColorBorder{
+        width: 180px;
+        height: 170%;
+    }
+
+    .cssColorBorder{
+        width: 180px;
+        height: 170%;
+    }
+
+    .jsColorBorder{
+        width: 180px;
+        height: 170%;
+    }
+}
